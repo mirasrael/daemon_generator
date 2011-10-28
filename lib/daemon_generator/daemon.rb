@@ -2,7 +2,7 @@ require 'rails/generators'
 
 module DaemonGenerator
   class DaemonGenerator < Rails::Generators::NamedBase
-
+    namespace 'daemon'
     source_root File.expand_path('../templates', __FILE__)
     argument :daemon_name, :type => :string, :default => "application"
 
