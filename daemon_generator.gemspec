@@ -16,5 +16,6 @@ Gem::Specification.new do |gem|
   gem.version       = DaemonGenerator::VERSION
 
   gem.add_dependency 'rails', '~>3.0.0'
+  gem.add_dependency 'daemons'
   gem.add_development_dependency "rake"
 end
