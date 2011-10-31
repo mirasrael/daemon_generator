@@ -8,7 +8,8 @@ module DaemonGenerator
 
     def generate_daemon
       unless File.exists?(Rails.root.join("script", "daemons"))
-        copy_file "daemons", "script/daemons", :chmod => 0755
+        copy_file "daemons", "script/daemons"
+        chmod 'script/daemons', 0755
       end
       template "script.rb", "lib/daemons/#{file_name}.rb"
       chmod "lib/daemons/#{file_name}.rb", 0755
