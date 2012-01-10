@@ -1,3 +1,6 @@
+I'm not supporting anymore this fork. I created another gem for Rails 3 with generators, rakes & monitoring manager (accessiable from Rails application):
+https://github.com/mirasrael/daemons-rails
+
 Daemon Generator
 ================
 
